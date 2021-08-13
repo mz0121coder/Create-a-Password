@@ -23,8 +23,8 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## Working links
-* Repo : https://github.com/mz0121coder/Create-a-password
-* Main URL: https://mz0121coder.github.io/Create-a-password
+* Repo : https://github.com/mz0121coder/Create-a-Password/
+* Main URL: https://mz0121coder.github.io/Create-a-Password/
 
 ## Page Demo 
 ![Create-a-password-demo](assets/Create-a-password-demo.gif)
