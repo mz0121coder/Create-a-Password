@@ -23,3 +23,16 @@ generateBtn.addEventListener("click", function () {
   document.getElementById("password").placeholder = joinAndCreate;
 });
 
+function makeUniquePassword() {
+    // User prompts begin
+      clickGeneratePassword = parseInt(prompt("How many characters do you want in your password?"));
+      
+      if(!clickGeneratePassword) {
+        alert("Select at least one option to generate a password");
+      } else if (clickGeneratePassword <8 || clickGeneratePassword > 128) {
+    
+        clickGeneratePassword = parseInt(prompt("must be between 8 and 128 characters"));
+      }
+    
+     else {
+
