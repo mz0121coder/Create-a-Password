@@ -101,4 +101,10 @@ let createdPassword = [];
     for (let i = 0; i < clickGeneratePassword; i++) {
       let selectValues = userSelection[Math.floor(Math.random() * userSelection.length)];
       createdPassword.push(selectValues);
-  }
+    }
+
+// Convert choices into string
+let joinAndCreate = createdPassword.join("");
+chosenInputs(joinAndCreate);
+return joinAndCreate;
+}
