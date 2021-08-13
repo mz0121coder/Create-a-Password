@@ -38,7 +38,7 @@ function makeUniquePassword() {
      else {
 
   // Continue questions once validated
-  checkNumbersWanted = confirm("Numbers letters - click OK to include, or cancel to leave out");
+  checkNumbersWanted = confirm("Numbers - click OK to include, or cancel to leave out");
   checkOtherChoices = confirm("Special Characters - click OK to include, or cancel to leave out");
   checkUpperWanted = confirm("Uppercase letters - click OK to include, or cancel to leave out");
   checkLowerWanted = confirm("Lowercase letters - click OK to include, or cancel to leave out");
