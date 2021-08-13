@@ -33,7 +33,7 @@ function makeUniquePassword() {
     
         clickGeneratePassword = parseInt(prompt("must be between 8 and 128 characters"));
       }
-        
+
      else {
   // Continue questions once validated
   checkNumbersWanted = confirm("Numbers letters - click OK to include, or cancel to leave out");
@@ -46,3 +46,7 @@ if (!checkOtherChoices && !checkNumbersWanted && !checkUpperWanted && !checkLowe
   userSelection = alert("Select at least one option to generate a password");
 }
 
+// Else if for 4 criteria selected
+else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted && checkLowerWanted) {
+    userSelection = otherChoicesList.concat(numberOptionsList, alphabetsList, convertToUpper);
+  }
