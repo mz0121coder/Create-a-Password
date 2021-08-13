@@ -50,3 +50,16 @@ if (!checkOtherChoices && !checkNumbersWanted && !checkUpperWanted && !checkLowe
 else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted && checkLowerWanted) {
     userSelection = otherChoicesList.concat(numberOptionsList, alphabetsList, convertToUpper);
   }
+ // Else if for 3 criteria selected
+ else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted) {
+    userSelection = otherChoicesList.concat(numberOptionsList, convertToUpper);
+  }
+  else if (checkOtherChoices && checkNumbersWanted && checkLowerWanted) {
+    userSelection = otherChoicesList.concat(numberOptionsList, alphabetsList);
+  }
+  else if (checkOtherChoices && checkLowerWanted && checkUpperWanted) {
+    userSelection = otherChoicesList.concat(alphabetsList, convertToUpper);
+  }
+  else if (checkNumbersWanted && checkLowerWanted && checkUpperWanted) {
+    userSelection = numberOptionsList.concat(alphabetsList, convertToUpper);
+  }
