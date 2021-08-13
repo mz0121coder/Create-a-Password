@@ -94,3 +94,11 @@ else if (checkOtherChoices) {
   else if (checkLowerWanted) {
     userSelection = alphabetsList;
   };
+  
+// Random selection for all choices
+let createdPassword = [];
+
+    for (let i = 0; i < clickGeneratePassword; i++) {
+      let selectValues = userSelection[Math.floor(Math.random() * userSelection.length)];
+      createdPassword.push(selectValues);
+  }
