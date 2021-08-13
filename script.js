@@ -63,3 +63,23 @@ else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted && checkLow
   else if (checkNumbersWanted && checkLowerWanted && checkUpperWanted) {
     userSelection = numberOptionsList.concat(alphabetsList, convertToUpper);
   }
+  
+ // Else if for 2 criteria selected
+ else if (checkOtherChoices && checkNumbersWanted) {
+    userSelection = otherChoicesList.concat(numberOptionsList);
+  
+  } else if (checkOtherChoices && checkLowerWanted) {
+    userSelection = otherChoicesList.concat(alphabetsList);
+  
+  } else if (checkOtherChoices && checkUpperWanted) {
+    userSelection = otherChoicesList.concat(convertToUpper);
+  }
+  else if (checkLowerWanted && checkNumbersWanted) {
+    userSelection = alphabetsList.concat(numberOptionsList);
+  
+  } else if (checkLowerWanted && checkUpperWanted) {
+    userSelection = alphabetsList.concat(convertToUpper);
+  
+  } else if (checkNumbersWanted && checkUpperWanted) {
+    userSelection = numberOptionsList.concat(convertToUpper);
+  }
