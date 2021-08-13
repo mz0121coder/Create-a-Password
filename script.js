@@ -63,7 +63,7 @@ else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted && checkLow
   else if (checkNumbersWanted && checkLowerWanted && checkUpperWanted) {
     userSelection = numberOptionsList.concat(alphabetsList, convertToUpper);
   }
-  
+
  // Else if for 2 criteria selected
  else if (checkOtherChoices && checkNumbersWanted) {
     userSelection = otherChoicesList.concat(numberOptionsList);
@@ -83,3 +83,14 @@ else if (checkOtherChoices && checkNumbersWanted && checkUpperWanted && checkLow
   } else if (checkNumbersWanted && checkUpperWanted) {
     userSelection = numberOptionsList.concat(convertToUpper);
   }
+
+// Else if for 1 criteria selected
+else if (checkOtherChoices) {
+    userSelection = otherChoicesList;
+  }
+  else if (checkNumbersWanted) {
+    userSelection = numberOptionsList;
+  }
+  else if (checkLowerWanted) {
+    userSelection = alphabetsList;
+  };
